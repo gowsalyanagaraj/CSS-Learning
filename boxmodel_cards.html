@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 300px;
+        }
+        header {
+            background: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border: 2px;
+            border-radius: 10px;
+        }
+        .container {
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 95%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card p {
+            margin: 0;
+        }
+        .card img {
+            border: 2px;
+            border-radius: 10px;
+            box-sizing: content-box;
+            padding: 10px;
+            height: 500px;
+            width: 95%;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border: 2px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Food Menu</h1>
+    </header>
+    <div class="container">
+        <div class="card">
+            
+            <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/05/juicy-cheeseburger.jpg" alt="burgerpic">
+            <p>Cheese Burger</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzUXwxKjDkf17YKakug9okRsOuGVhZD8h6RA&s" alt="pizzapic">
+            <p>Pizza</p>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?cs=srgb&dl=pexels-ash-craig-122861-376464.jpg&fm=jpg" alt="pancakepic">
+            <p>Pancakes</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; My Food Menus</p>
+    </footer>
+</body>
+</html>
