@@ -1,0 +1,41 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --button-bg: #000000;
+    --button-text: #ffffff;
+  }
+  
+  .dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --button-bg: #ffffff;
+    --button-text: #000000;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
