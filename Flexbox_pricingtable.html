@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Pricing Plans</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #141414;
+      color: white;
+    }
+    h1 {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    .pricing-container {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+    .plan {
+      background-color: #222;
+      border-radius: 10px;
+      padding: 25px;
+      text-align: center;
+      width: 280px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+    
+    .plan h2 {
+      font-size: 26px;
+      color: #e50914;
+      margin-bottom: 10px;
+    }
+    .price {
+      font-size: 32px;
+      font-weight: bold;
+      padding-bottom: 5px;
+    }
+    .features {
+      font-size: 14px;
+      padding-bottom: 20px;
+    }
+    button {
+      background-color: #e50914;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #b20710;
+    }
+  </style>
+</head>
+<body>
+  <h1>Netflix Pricing Plans</h1>
+  <div class="pricing-container">
+    <div class="plan">
+      <h2>Basic</h2>
+      <p class="price">$9.99/month</p>
+      <p class="features">1 Screen<br>SD Quality<br>Unlimited Movies & TV Shows</p>
+      <button>Choose Plan</button>
+    </div>
+    
+    <div class="plan">
+      <h2>Standard</h2>
+      <p class="price">$15.49/month</p>
+      <p class="features">2 Screens<br>HD Quality<br>Unlimited Movies & TV Shows</p>
+      <button>Choose Plan</button>
+    </div>
+    
+    <div class="plan">
+      <h2>Premium</h2>
+      <p class="price">$19.99/month</p>
+      <p class="features">4 Screens<br>Ultra HD Quality<br>Unlimited Movies & TV Shows</p>
+      <button>Choose Plan</button>
+    </div>
+  </div>
+</body>
+</html>
