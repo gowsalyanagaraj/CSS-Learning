@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specificity Example</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: black;
+
+    }
+    .hero {
+      width: 100vw;
+      height: 100vh;
+      background: url("https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/15090406/big-hero-6.0.0.1537481908.jpg?quality=90&strip=all&crop=3.125,0,93.75,100");  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: rgb(94, 32, 228);
+      padding: 20px;
+    }
+    .hero-content {
+      max-width: 80vw;
+    }
+    .hero h1 {
+      font-size: 5vw;
+      padding-bottom: 20px;
+      color: red !important;
+    }
+    #p-style {
+      font-size: 2vw;
+      padding-bottom: 30px;
+      color: blue;
+    }
+    .btn {
+      font-size: 1.5vw;
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: darkred;
+    }
+    .p-tag {
+        color: brown;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Big Hero 6</h1>
+      <p class="p-tag" id="p-style">Learn about the fantastic heroes!!</p>
+      <button class="btn">Get Started</button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      text-align: center;
+      color: white;
+    }
+    .hero {
+      padding: 50px 20px;
+    }
+    .hero img {
+      width: 150px;
+      border-radius: 50%;
+    }
+    .container-projects {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      justify-content: center;
+      gap: 20px;
+    }
+    .project-card {
+      background: rgb(245, 162, 211);
+      color: black;
+      padding: 2px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 50px;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        padding: 30px 10px;
+      }
+      .container-projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <img src="https://m.media-amazon.com/images/I/31Cd9UQp6eL._AC_UF1000,1000_QL80_.jpg" alt="Profile Picture">
+    <h1>Gowsalya Nagaraj</h1>
+    <p>Student, Developer, & Artist</p>
+  </div>
+  <div class="container-projects">
+    <div class="project-card">
+        <h3>Projects</h3>
+    </div>
+    <div class="project-card">
+      <h3>About</h3>
+    </div>
+    <div class="project-card">
+      <h3>Contact</h3>
+    </div>
+  </div>
+  
+</body>
+</html>
