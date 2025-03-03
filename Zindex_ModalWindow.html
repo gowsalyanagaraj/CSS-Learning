@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Window</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: wheat;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      display: none;
+    }
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 8px;
+      z-index: 2;
+      display: none;
+    }
+    .modal-header {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+    .close-btn {
+      background: rgb(96, 81, 81);
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    .open-btn {
+      padding: 10px 20px;
+      background: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+  <h3>Bravo! You have reached the max level!!</h3>
+  <button class="open-btn" onclick="openModal()">Next Level</button>
+  
+  <div class="overlay" id="overlay" onclick="closeModal()"></div>
+  </div>
+  <div class="modal" id="modal">
+    <div class="modal-header">Next Level</div>
+    <p>Sorry, the next level is in development phase. Please visit later.</p>
+    <button class="close-btn" onclick="closeModal()">Back</button>
+  </div>
+  
+  <script>
+    function openModal() {
+      document.getElementById("overlay").style.display = "block";
+      document.getElementById("modal").style.display = "block";
+    }
+    function closeModal() {
+      document.getElementById("overlay").style.display = "none";
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+</body>
+</html>
